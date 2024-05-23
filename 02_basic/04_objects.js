@@ -56,5 +56,29 @@ const   users=[
 // console.log(Object.entries(tinderUser));
 // // entries convert keys values into array it is rarely use
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 // hasOwnProperty is used check that property object has or not
+
+const course = {
+    courseName:"js in hindi",
+    price:"999",
+    courseInstructor:"Hitesh"
+}
+// course.courseInstructor
+
+// const {courseInstructor}=course
+// console.log(courseInstructor);
+const {courseInstructor: instructor}=course
+// console.log(instructor);
+
+//  {
+//     "name":"hitesh"
+//     "coursename": "js in hindi"
+//     "fee": "free"
+//  }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]

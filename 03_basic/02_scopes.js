@@ -28,8 +28,26 @@ if(true){
     const username= "hitesh"
     if(username === "hitesh"){
         const website=" youtube"
-        console.log(username+website);
+        // console.log(username+website);
     }
         // console.log(website);
 }
 // console.log(username);
+
+
+// +++++++++++++++++ Intresting +++++++++++++++++++++++++++
+
+
+console.log(addOne(5));
+function addOne(num){
+    return num+1
+}
+
+// console.log(addTwo(5)); //error
+
+const addTwo = function(num){
+    return num+2
+}
+// console.log(addTwo(5)); //7
+
+// if we declare any function as a variable then we cant use that perticuler function calling before function defination

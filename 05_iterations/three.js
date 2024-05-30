@@ -23,7 +23,12 @@ map.set('USA',"United State Of America")
 map.set('FR',"France")
 // map.set('IN',"India") //if we rewrite any pair then it will print only one
 
+// map is not iterable
+
 // console.log(map) 
+// for(const key of map){
+//     console.log(key);
+// }
 for(const [key,value] of map){
     // console.log(key, ':-', value);
 }

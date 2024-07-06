@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai or Code</h1>
+    <button id="stop">Stop</button>
+</body>
+    <script>
+        setTimeout(function(){
+            console.log("Shivam");
+        },2000)
+        // setTimeout() do any task only once after the given time
+
+        // we can write as
+        const sayShivam = function(){
+            console.log("Shivam");
+        }
+
+        const changeText=function(){
+                    document.querySelector("h1").innerHTML="best js series"
+        }    
+
+       const changeMe= setTimeout(changeText,2000);
+        // here we give reference of function not call the function
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log("STOPPED")
+        })
+    </script>
+</html>
